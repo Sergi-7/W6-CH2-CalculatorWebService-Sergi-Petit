@@ -1,27 +1,25 @@
-const chalk = require("chalk");
 const sumeFunction = require("./sumeFunction");
 const differenceFunction = require("./differenceFunction");
 const multiplicationFunction = require("./multiplicationFunction");
 const divisionFunction = require("./divisionFunction");
 
 const printResults = (a, b) => {
-  const resultSume = chalk.bgBlue(sumeFunction(a, b));
-  const resultDifference = chalk.bgBlue(differenceFunction(a, b));
-  const resultMultiplication = chalk.bgBlue(multiplicationFunction(a, b));
-  const resultDivision = chalk.bgBlue(divisionFunction(a, b));
+  const resultSume = sumeFunction(a, b);
+  const resultDifference = differenceFunction(a, b);
+  const resultMultiplication = multiplicationFunction(a, b);
+  const resultDivision = divisionFunction(a, b);
 
-  console.log(
-    chalk.yellow(`
-      Resultados : \n
-      ${a} + ${b} : ${resultSume}
-      \n
-      ${a} - ${b} : ${resultDifference}
-      \n
-      ${a} * ${b} : ${resultMultiplication}
-      \n
-      ${a} / ${b} : ${resultDivision}
-    `)
-  );
+  return `<div>
+  <h1>Resultados :</h1>  
+      <p>${a} + ${b} : ${resultSume}</p>
+      
+      <p>${a} - ${b} : ${resultDifference}</p>
+      
+      <p>${a} * ${b} : ${resultMultiplication}</p>
+      
+      <p>${a} / ${b} : ${resultDivision}</p>
+      </div>
+    `;
 };
 
 module.exports = printResults;
