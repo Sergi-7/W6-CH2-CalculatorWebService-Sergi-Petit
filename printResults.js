@@ -4,6 +4,9 @@ const multiplicationFunction = require("./multiplicationFunction");
 const divisionFunction = require("./divisionFunction");
 
 const printResults = (a, b) => {
+  if (Number.isNaN(+a) || Number.isNaN(+b)) {
+    return `<h1>Fatal ERROR</h1>`;
+  }
   const resultSume = sumeFunction(a, b);
   const resultDifference = differenceFunction(a, b);
   const resultMultiplication = multiplicationFunction(a, b);
