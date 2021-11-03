@@ -1,0 +1,26 @@
+{
+  "name": "w6-ch2-calculatorwebservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergi-7/W6-CH2-CalculatorWebService-Sergi-Petit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sergi-7/W6-CH2-CalculatorWebService-Sergi-Petit/issues"
+  },
+  "homepage": "https://github.com/Sergi-7/W6-CH2-CalculatorWebService-Sergi-Petit#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2"
+  }
+}
